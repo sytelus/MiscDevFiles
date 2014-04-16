@@ -1,0 +1,2 @@
+grunt test
+git status
