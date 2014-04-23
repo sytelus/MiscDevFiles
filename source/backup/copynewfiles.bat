@@ -1,4 +1,5 @@
-REM Copy even if errors, only new files, with attributes, overrite, include system files
 time /t
-xcopy %1 %2 /E /C /Q /H /R /K /Y /D
+REM mirror, copy symbolic links, directory times, log
+robocopy %1 %2 /MIR /SL /DCOPY:DAT /R:0 /TEE /LOG:c:\temp\copynewfiles.log /XF c:\temp\copynewfiles.log
 time /t
+pause
