@@ -4,4 +4,3 @@ pause
 git reset --hard
 git reset --hard origin/master
 git clean -f -d
-git pull
